@@ -4,8 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>epuck_ports.h</itemPath>
-      <itemPath>init_port.h</itemPath>
+      <itemPath>e_epuck_ports.h</itemPath>
+      <itemPath>e_init_port.h</itemPath>
+      <itemPath>h_utility.h</itemPath>
+      <itemPath>e_motors.h</itemPath>
+      <itemPath>e_uart_char.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,7 +19,16 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>ledtest.c</itemPath>
-      <itemPath>init_port.c</itemPath>
+      <itemPath>e_init_port.c</itemPath>
+      <itemPath>e_motors.c</itemPath>
+      <itemPath>h_utility.c</itemPath>
+      <itemPath>e_init_uart1.s</itemPath>
+      <itemPath>e_init_uart2.s</itemPath>
+      <itemPath>e_uart1_rx_char.s</itemPath>
+      <itemPath>e_uart1_tx_char.s</itemPath>
+      <itemPath>e_uart2_rx_char.s</itemPath>
+      <itemPath>e_uart2_tx_char.s</itemPath>
+      <itemPath>e_epuck_ports.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -24,6 +36,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Downloads/e-puck-lib/library/motor_led</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
