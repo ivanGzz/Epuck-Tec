@@ -1,8 +1,11 @@
+/*
+ * Author: http://www.eecs.harvard.edu/ssr/teaching/epucks/e-site.htm
+ */
+
 #ifndef _H_UTILITY_H_
 #define _H_UTILITY_H_
 
-void wait(long num);
-void myWait(long milli);
+void wait(long milli);
 int getselector();
 void setLED(int LEDnum, int state);
 void allRedLEDsOff();
