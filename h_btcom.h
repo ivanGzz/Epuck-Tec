@@ -1,5 +1,5 @@
 /*
- * Author: http://www.eecs.harvard.edu/ssr/teaching/epucks/e-site.htm
+ * Original Author: http://www.eecs.harvard.edu/ssr/teaching/epucks/e-site.htm
  */
 
 #ifndef BTCOM_H
