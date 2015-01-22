@@ -10,6 +10,11 @@
       <itemPath>e_motors.h</itemPath>
       <itemPath>e_uart_char.h</itemPath>
       <itemPath>h_btcom.h</itemPath>
+      <itemPath>e_poxxxx.h</itemPath>
+      <itemPath>e_po6030k.h</itemPath>
+      <itemPath>e_I2C_protocol.h</itemPath>
+      <itemPath>e_I2C_master_module.h</itemPath>
+      <itemPath>e_po3030k.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -31,6 +36,15 @@
       <itemPath>e_epuck_ports.inc</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>h_btcom.c</itemPath>
+      <itemPath>e_I2C_master_module.c</itemPath>
+      <itemPath>e_I2C_protocol.c</itemPath>
+      <itemPath>e_po6030k.c</itemPath>
+      <itemPath>e_calc_po6030k.c</itemPath>
+      <itemPath>e_calc_po3030k.c</itemPath>
+      <itemPath>e_po3030k.c</itemPath>
+      <itemPath>e_poxxxx.c</itemPath>
+      <itemPath>e_timers.c</itemPath>
+      <itemPath>e_interrupt.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -38,6 +52,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Downloads/Lab 3 - Code/camera/fast_2_timer</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
