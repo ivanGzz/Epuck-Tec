@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=e_init_port.c e_motors.c h_utility.c e_init_uart1.s e_init_uart2.s e_uart1_rx_char.s e_uart1_tx_char.s e_uart2_rx_char.s e_uart2_tx_char.s main.c h_btcom.c e_I2C_master_module.c e_I2C_protocol.c e_po6030k.c e_calc_po6030k.c e_calc_po3030k.c e_po3030k.c e_poxxxx.c e_timers.c e_interrupt.s
+SOURCEFILES_QUOTED_IF_SPACED=main.c utilities.c e_motors_timer3.c e_init_port.c e_lsm330.c e_init_uart1.s e_init_uart2.s e_uart1_rx_char.s e_uart1_tx_char.s e_uart2_rx_char.s e_uart2_tx_char.s e_I2C_master_module.c e_I2C_protocol.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/e_init_port.o ${OBJECTDIR}/e_motors.o ${OBJECTDIR}/h_utility.o ${OBJECTDIR}/e_init_uart1.o ${OBJECTDIR}/e_init_uart2.o ${OBJECTDIR}/e_uart1_rx_char.o ${OBJECTDIR}/e_uart1_tx_char.o ${OBJECTDIR}/e_uart2_rx_char.o ${OBJECTDIR}/e_uart2_tx_char.o ${OBJECTDIR}/main.o ${OBJECTDIR}/h_btcom.o ${OBJECTDIR}/e_I2C_master_module.o ${OBJECTDIR}/e_I2C_protocol.o ${OBJECTDIR}/e_po6030k.o ${OBJECTDIR}/e_calc_po6030k.o ${OBJECTDIR}/e_calc_po3030k.o ${OBJECTDIR}/e_po3030k.o ${OBJECTDIR}/e_poxxxx.o ${OBJECTDIR}/e_timers.o ${OBJECTDIR}/e_interrupt.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/e_init_port.o.d ${OBJECTDIR}/e_motors.o.d ${OBJECTDIR}/h_utility.o.d ${OBJECTDIR}/e_init_uart1.o.d ${OBJECTDIR}/e_init_uart2.o.d ${OBJECTDIR}/e_uart1_rx_char.o.d ${OBJECTDIR}/e_uart1_tx_char.o.d ${OBJECTDIR}/e_uart2_rx_char.o.d ${OBJECTDIR}/e_uart2_tx_char.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/h_btcom.o.d ${OBJECTDIR}/e_I2C_master_module.o.d ${OBJECTDIR}/e_I2C_protocol.o.d ${OBJECTDIR}/e_po6030k.o.d ${OBJECTDIR}/e_calc_po6030k.o.d ${OBJECTDIR}/e_calc_po3030k.o.d ${OBJECTDIR}/e_po3030k.o.d ${OBJECTDIR}/e_poxxxx.o.d ${OBJECTDIR}/e_timers.o.d ${OBJECTDIR}/e_interrupt.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/utilities.o ${OBJECTDIR}/e_motors_timer3.o ${OBJECTDIR}/e_init_port.o ${OBJECTDIR}/e_lsm330.o ${OBJECTDIR}/e_init_uart1.o ${OBJECTDIR}/e_init_uart2.o ${OBJECTDIR}/e_uart1_rx_char.o ${OBJECTDIR}/e_uart1_tx_char.o ${OBJECTDIR}/e_uart2_rx_char.o ${OBJECTDIR}/e_uart2_tx_char.o ${OBJECTDIR}/e_I2C_master_module.o ${OBJECTDIR}/e_I2C_protocol.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/utilities.o.d ${OBJECTDIR}/e_motors_timer3.o.d ${OBJECTDIR}/e_init_port.o.d ${OBJECTDIR}/e_lsm330.o.d ${OBJECTDIR}/e_init_uart1.o.d ${OBJECTDIR}/e_init_uart2.o.d ${OBJECTDIR}/e_uart1_rx_char.o.d ${OBJECTDIR}/e_uart1_tx_char.o.d ${OBJECTDIR}/e_uart2_rx_char.o.d ${OBJECTDIR}/e_uart2_tx_char.o.d ${OBJECTDIR}/e_I2C_master_module.o.d ${OBJECTDIR}/e_I2C_protocol.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/e_init_port.o ${OBJECTDIR}/e_motors.o ${OBJECTDIR}/h_utility.o ${OBJECTDIR}/e_init_uart1.o ${OBJECTDIR}/e_init_uart2.o ${OBJECTDIR}/e_uart1_rx_char.o ${OBJECTDIR}/e_uart1_tx_char.o ${OBJECTDIR}/e_uart2_rx_char.o ${OBJECTDIR}/e_uart2_tx_char.o ${OBJECTDIR}/main.o ${OBJECTDIR}/h_btcom.o ${OBJECTDIR}/e_I2C_master_module.o ${OBJECTDIR}/e_I2C_protocol.o ${OBJECTDIR}/e_po6030k.o ${OBJECTDIR}/e_calc_po6030k.o ${OBJECTDIR}/e_calc_po3030k.o ${OBJECTDIR}/e_po3030k.o ${OBJECTDIR}/e_poxxxx.o ${OBJECTDIR}/e_timers.o ${OBJECTDIR}/e_interrupt.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/utilities.o ${OBJECTDIR}/e_motors_timer3.o ${OBJECTDIR}/e_init_port.o ${OBJECTDIR}/e_lsm330.o ${OBJECTDIR}/e_init_uart1.o ${OBJECTDIR}/e_init_uart2.o ${OBJECTDIR}/e_uart1_rx_char.o ${OBJECTDIR}/e_uart1_tx_char.o ${OBJECTDIR}/e_uart2_rx_char.o ${OBJECTDIR}/e_uart2_tx_char.o ${OBJECTDIR}/e_I2C_master_module.o ${OBJECTDIR}/e_I2C_protocol.o
 
 # Source Files
-SOURCEFILES=e_init_port.c e_motors.c h_utility.c e_init_uart1.s e_init_uart2.s e_uart1_rx_char.s e_uart1_tx_char.s e_uart2_rx_char.s e_uart2_tx_char.s main.c h_btcom.c e_I2C_master_module.c e_I2C_protocol.c e_po6030k.c e_calc_po6030k.c e_calc_po3030k.c e_po3030k.c e_poxxxx.c e_timers.c e_interrupt.s
+SOURCEFILES=main.c utilities.c e_motors_timer3.c e_init_port.c e_lsm330.c e_init_uart1.s e_init_uart2.s e_uart1_rx_char.s e_uart1_tx_char.s e_uart2_rx_char.s e_uart2_tx_char.s e_I2C_master_module.c e_I2C_protocol.c
 
 
 CFLAGS=
@@ -82,27 +82,6 @@ MP_LINKER_FILE_OPTION=,--script="p30F6014A.gld"
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/e_init_port.o: e_init_port.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_init_port.o.d 
-	@${RM} ${OBJECTDIR}/e_init_port.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_init_port.c  -o ${OBJECTDIR}/e_init_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_init_port.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_init_port.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_motors.o: e_motors.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_motors.o.d 
-	@${RM} ${OBJECTDIR}/e_motors.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_motors.c  -o ${OBJECTDIR}/e_motors.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_motors.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_motors.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/h_utility.o: h_utility.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/h_utility.o.d 
-	@${RM} ${OBJECTDIR}/h_utility.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  h_utility.c  -o ${OBJECTDIR}/h_utility.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/h_utility.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/h_utility.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
@@ -110,12 +89,33 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/h_btcom.o: h_btcom.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/utilities.o: utilities.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/h_btcom.o.d 
-	@${RM} ${OBJECTDIR}/h_btcom.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  h_btcom.c  -o ${OBJECTDIR}/h_btcom.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/h_btcom.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/h_btcom.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/utilities.o.d 
+	@${RM} ${OBJECTDIR}/utilities.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  utilities.c  -o ${OBJECTDIR}/utilities.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/utilities.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/utilities.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_motors_timer3.o: e_motors_timer3.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_motors_timer3.o.d 
+	@${RM} ${OBJECTDIR}/e_motors_timer3.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_motors_timer3.c  -o ${OBJECTDIR}/e_motors_timer3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_motors_timer3.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_motors_timer3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_init_port.o: e_init_port.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_init_port.o.d 
+	@${RM} ${OBJECTDIR}/e_init_port.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_init_port.c  -o ${OBJECTDIR}/e_init_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_init_port.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_init_port.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_lsm330.o: e_lsm330.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_lsm330.o.d 
+	@${RM} ${OBJECTDIR}/e_lsm330.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_lsm330.c  -o ${OBJECTDIR}/e_lsm330.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_lsm330.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_lsm330.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/e_I2C_master_module.o: e_I2C_master_module.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -131,70 +131,7 @@ ${OBJECTDIR}/e_I2C_protocol.o: e_I2C_protocol.c  nbproject/Makefile-${CND_CONF}.
 	${MP_CC} $(MP_EXTRA_CC_PRE)  e_I2C_protocol.c  -o ${OBJECTDIR}/e_I2C_protocol.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_I2C_protocol.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/e_I2C_protocol.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/e_po6030k.o: e_po6030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_po6030k.o.d 
-	@${RM} ${OBJECTDIR}/e_po6030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_po6030k.c  -o ${OBJECTDIR}/e_po6030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_po6030k.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_po6030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_calc_po6030k.o: e_calc_po6030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_calc_po6030k.o.d 
-	@${RM} ${OBJECTDIR}/e_calc_po6030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_calc_po6030k.c  -o ${OBJECTDIR}/e_calc_po6030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_calc_po6030k.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_calc_po6030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_calc_po3030k.o: e_calc_po3030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_calc_po3030k.o.d 
-	@${RM} ${OBJECTDIR}/e_calc_po3030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_calc_po3030k.c  -o ${OBJECTDIR}/e_calc_po3030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_calc_po3030k.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_calc_po3030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_po3030k.o: e_po3030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_po3030k.o.d 
-	@${RM} ${OBJECTDIR}/e_po3030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_po3030k.c  -o ${OBJECTDIR}/e_po3030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_po3030k.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_po3030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_poxxxx.o: e_poxxxx.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_poxxxx.o.d 
-	@${RM} ${OBJECTDIR}/e_poxxxx.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_poxxxx.c  -o ${OBJECTDIR}/e_poxxxx.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_poxxxx.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_poxxxx.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_timers.o: e_timers.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_timers.o.d 
-	@${RM} ${OBJECTDIR}/e_timers.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_timers.c  -o ${OBJECTDIR}/e_timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_timers.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1    -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 else
-${OBJECTDIR}/e_init_port.o: e_init_port.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_init_port.o.d 
-	@${RM} ${OBJECTDIR}/e_init_port.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_init_port.c  -o ${OBJECTDIR}/e_init_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_init_port.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_init_port.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_motors.o: e_motors.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_motors.o.d 
-	@${RM} ${OBJECTDIR}/e_motors.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_motors.c  -o ${OBJECTDIR}/e_motors.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_motors.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_motors.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/h_utility.o: h_utility.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/h_utility.o.d 
-	@${RM} ${OBJECTDIR}/h_utility.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  h_utility.c  -o ${OBJECTDIR}/h_utility.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/h_utility.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/h_utility.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
@@ -202,12 +139,33 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/main.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/h_btcom.o: h_btcom.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/utilities.o: utilities.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/h_btcom.o.d 
-	@${RM} ${OBJECTDIR}/h_btcom.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  h_btcom.c  -o ${OBJECTDIR}/h_btcom.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/h_btcom.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/h_btcom.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/utilities.o.d 
+	@${RM} ${OBJECTDIR}/utilities.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  utilities.c  -o ${OBJECTDIR}/utilities.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/utilities.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/utilities.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_motors_timer3.o: e_motors_timer3.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_motors_timer3.o.d 
+	@${RM} ${OBJECTDIR}/e_motors_timer3.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_motors_timer3.c  -o ${OBJECTDIR}/e_motors_timer3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_motors_timer3.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_motors_timer3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_init_port.o: e_init_port.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_init_port.o.d 
+	@${RM} ${OBJECTDIR}/e_init_port.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_init_port.c  -o ${OBJECTDIR}/e_init_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_init_port.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_init_port.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/e_lsm330.o: e_lsm330.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/e_lsm330.o.d 
+	@${RM} ${OBJECTDIR}/e_lsm330.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  e_lsm330.c  -o ${OBJECTDIR}/e_lsm330.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_lsm330.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+	@${FIXDEPS} "${OBJECTDIR}/e_lsm330.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/e_I2C_master_module.o: e_I2C_master_module.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -222,48 +180,6 @@ ${OBJECTDIR}/e_I2C_protocol.o: e_I2C_protocol.c  nbproject/Makefile-${CND_CONF}.
 	@${RM} ${OBJECTDIR}/e_I2C_protocol.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  e_I2C_protocol.c  -o ${OBJECTDIR}/e_I2C_protocol.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_I2C_protocol.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
 	@${FIXDEPS} "${OBJECTDIR}/e_I2C_protocol.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_po6030k.o: e_po6030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_po6030k.o.d 
-	@${RM} ${OBJECTDIR}/e_po6030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_po6030k.c  -o ${OBJECTDIR}/e_po6030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_po6030k.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_po6030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_calc_po6030k.o: e_calc_po6030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_calc_po6030k.o.d 
-	@${RM} ${OBJECTDIR}/e_calc_po6030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_calc_po6030k.c  -o ${OBJECTDIR}/e_calc_po6030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_calc_po6030k.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_calc_po6030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_calc_po3030k.o: e_calc_po3030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_calc_po3030k.o.d 
-	@${RM} ${OBJECTDIR}/e_calc_po3030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_calc_po3030k.c  -o ${OBJECTDIR}/e_calc_po3030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_calc_po3030k.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_calc_po3030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_po3030k.o: e_po3030k.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_po3030k.o.d 
-	@${RM} ${OBJECTDIR}/e_po3030k.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_po3030k.c  -o ${OBJECTDIR}/e_po3030k.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_po3030k.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_po3030k.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_poxxxx.o: e_poxxxx.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_poxxxx.o.d 
-	@${RM} ${OBJECTDIR}/e_poxxxx.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_poxxxx.c  -o ${OBJECTDIR}/e_poxxxx.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_poxxxx.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_poxxxx.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/e_timers.o: e_timers.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_timers.o.d 
-	@${RM} ${OBJECTDIR}/e_timers.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  e_timers.c  -o ${OBJECTDIR}/e_timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/e_timers.o.d"        -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
-	@${FIXDEPS} "${OBJECTDIR}/e_timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 
@@ -312,13 +228,6 @@ ${OBJECTDIR}/e_uart2_tx_char.o: e_uart2_tx_char.s  nbproject/Makefile-${CND_CONF
 	${MP_CC} $(MP_EXTRA_AS_PRE)  e_uart2_tx_char.s  -o ${OBJECTDIR}/e_uart2_tx_char.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1  -omf=elf -Wa,-MD,"${OBJECTDIR}/e_uart2_tx_char.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PICKIT2=1,-g,--no-relax$(MP_EXTRA_AS_POST)
 	@${FIXDEPS} "${OBJECTDIR}/e_uart2_tx_char.o.d"  $(SILENT)  -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/e_interrupt.o: e_interrupt.s  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_interrupt.o.d 
-	@${RM} ${OBJECTDIR}/e_interrupt.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  e_interrupt.s  -o ${OBJECTDIR}/e_interrupt.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1  -omf=elf -Wa,-MD,"${OBJECTDIR}/e_interrupt.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PICKIT2=1,-g,--no-relax$(MP_EXTRA_AS_POST)
-	@${FIXDEPS} "${OBJECTDIR}/e_interrupt.o.d"  $(SILENT)  -rsi ${MP_CC_DIR}../  
-	
 else
 ${OBJECTDIR}/e_init_uart1.o: e_init_uart1.s  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -361,13 +270,6 @@ ${OBJECTDIR}/e_uart2_tx_char.o: e_uart2_tx_char.s  nbproject/Makefile-${CND_CONF
 	@${RM} ${OBJECTDIR}/e_uart2_tx_char.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  e_uart2_tx_char.s  -o ${OBJECTDIR}/e_uart2_tx_char.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -Wa,-MD,"${OBJECTDIR}/e_uart2_tx_char.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST)
 	@${FIXDEPS} "${OBJECTDIR}/e_uart2_tx_char.o.d"  $(SILENT)  -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/e_interrupt.o: e_interrupt.s  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/e_interrupt.o.d 
-	@${RM} ${OBJECTDIR}/e_interrupt.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  e_interrupt.s  -o ${OBJECTDIR}/e_interrupt.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -Wa,-MD,"${OBJECTDIR}/e_interrupt.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST)
-	@${FIXDEPS} "${OBJECTDIR}/e_interrupt.o.d"  $(SILENT)  -rsi ${MP_CC_DIR}../  
 	
 endif
 

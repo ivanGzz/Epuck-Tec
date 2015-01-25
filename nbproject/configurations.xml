@@ -4,17 +4,14 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>utilities.h</itemPath>
       <itemPath>e_epuck_ports.h</itemPath>
       <itemPath>e_init_port.h</itemPath>
-      <itemPath>h_utility.h</itemPath>
       <itemPath>e_motors.h</itemPath>
       <itemPath>e_uart_char.h</itemPath>
-      <itemPath>h_btcom.h</itemPath>
-      <itemPath>e_poxxxx.h</itemPath>
-      <itemPath>e_po6030k.h</itemPath>
-      <itemPath>e_I2C_protocol.h</itemPath>
       <itemPath>e_I2C_master_module.h</itemPath>
-      <itemPath>e_po3030k.h</itemPath>
+      <itemPath>e_I2C_protocol.h</itemPath>
+      <itemPath>e_lsm330.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -24,27 +21,20 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>main.c</itemPath>
+      <itemPath>utilities.c</itemPath>
+      <itemPath>e_motors_timer3.c</itemPath>
       <itemPath>e_init_port.c</itemPath>
-      <itemPath>e_motors.c</itemPath>
-      <itemPath>h_utility.c</itemPath>
+      <itemPath>e_lsm330.c</itemPath>
       <itemPath>e_init_uart1.s</itemPath>
       <itemPath>e_init_uart2.s</itemPath>
       <itemPath>e_uart1_rx_char.s</itemPath>
       <itemPath>e_uart1_tx_char.s</itemPath>
       <itemPath>e_uart2_rx_char.s</itemPath>
       <itemPath>e_uart2_tx_char.s</itemPath>
-      <itemPath>e_epuck_ports.inc</itemPath>
-      <itemPath>main.c</itemPath>
-      <itemPath>h_btcom.c</itemPath>
       <itemPath>e_I2C_master_module.c</itemPath>
       <itemPath>e_I2C_protocol.c</itemPath>
-      <itemPath>e_po6030k.c</itemPath>
-      <itemPath>e_calc_po6030k.c</itemPath>
-      <itemPath>e_calc_po3030k.c</itemPath>
-      <itemPath>e_po3030k.c</itemPath>
-      <itemPath>e_poxxxx.c</itemPath>
-      <itemPath>e_timers.c</itemPath>
-      <itemPath>e_interrupt.s</itemPath>
+      <itemPath>e_epuck_ports.inc</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -54,6 +44,11 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../../Downloads/Lab 3 - Code/camera/fast_2_timer</Elem>
+    <Elem>library/motor_led</Elem>
+    <Elem>library/I2C</Elem>
+    <Elem>library/acc_gyro</Elem>
+    <Elem>library/uart</Elem>
+    <Elem>/Applications/microchip/xc16/v1.21/support/dsPIC30F/inc</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
