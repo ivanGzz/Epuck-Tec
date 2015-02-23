@@ -12,6 +12,10 @@
       <itemPath>e_I2C_master_module.h</itemPath>
       <itemPath>e_I2C_protocol.h</itemPath>
       <itemPath>e_lsm330.h</itemPath>
+      <itemPath>e_po6030k.h</itemPath>
+      <itemPath>e_poxxxx.h</itemPath>
+      <itemPath>e_po3030k.h</itemPath>
+      <itemPath>e_po8030d.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -35,6 +39,15 @@
       <itemPath>e_I2C_master_module.c</itemPath>
       <itemPath>e_I2C_protocol.c</itemPath>
       <itemPath>e_epuck_ports.inc</itemPath>
+      <itemPath>e_calc_po6030k.c</itemPath>
+      <itemPath>e_common.c</itemPath>
+      <itemPath>e_interrupt.s</itemPath>
+      <itemPath>e_po6030k_registers.c</itemPath>
+      <itemPath>e_timers.c</itemPath>
+      <itemPath>e_calc_po3030k.c</itemPath>
+      <itemPath>e_calc_po8030d.c</itemPath>
+      <itemPath>e_po3030k_registers.c</itemPath>
+      <itemPath>e_po8030d_registers.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -49,6 +62,7 @@
     <Elem>library/acc_gyro</Elem>
     <Elem>library/uart</Elem>
     <Elem>/Applications/microchip/xc16/v1.21/support/dsPIC30F/inc</Elem>
+    <Elem>library/camera/fast_2_timer</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
