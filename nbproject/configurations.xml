@@ -16,6 +16,7 @@
       <itemPath>e_poxxxx.h</itemPath>
       <itemPath>e_po3030k.h</itemPath>
       <itemPath>e_po8030d.h</itemPath>
+      <itemPath>t_vision.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -48,6 +49,7 @@
       <itemPath>e_calc_po8030d.c</itemPath>
       <itemPath>e_po3030k_registers.c</itemPath>
       <itemPath>e_po8030d_registers.c</itemPath>
+      <itemPath>t_vision.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

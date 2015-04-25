@@ -14,36 +14,17 @@
 #include "e_poxxxx.h"
 #include "utilities.h"
 #include "e_uart_char.h"
+#include "t_vision.h"
 
-#define WIDTH 80 // max width 640
-#define HEIGHT 20 // max height 480
-#define ZOOM 8 // 1, 2, 4, 8 or 16
-//#define BUFFER_SIZE (WIDTH * HEIGHT) // we are working on GREY_SCALE
-#define BUFFER_SIZE (WIDTH * HEIGHT * 2) // now we are working on RGB_565
-
-
-char buffer[BUFFER_SIZE];
 char msg[80];
 char reds = 0;
-char red_x[10];
-char red_y[10];
-char red_w[10];
-char red_h[10];
+char greens = 0;
+struct object red_objects[MAX_REDS];
+struct object green_objects[MAX_GREENS];
 
 void sendString(char* msg) {
     e_send_uart1_char(msg, strlen(msg));
     while(e_uart1_sending());
-}
-
-void getColors(char x, char y, char* r, char* g, char* b) {
-    char h = buffer[2 * (WIDTH * y + x)];
-    char l = buffer[2 * (WIDTH * y + x) + 1];
-    char rb = h & 0xF8;
-    char gb = ((h & 0x07) << 5) | ((l & 0xE0) >> 3);
-    char bb = (l & 0x1F) << 3;
-    *r = (rb - gb) + (rb - bb);
-    *g = (gb - rb) + (gb - bb);
-    *b = (bb - rb) + (bb - gb);
 }
 
 int main(void) {
@@ -57,50 +38,21 @@ int main(void) {
     e_poxxxx_write_cam_registers();
     int cycle = 0;
     while (1) {
-        e_poxxxx_launch_capture(buffer);
-        while (!e_poxxxx_is_img_ready());
         reds = 0;
-        char i, j, h, l, r, g, b;
-	for (i = HEIGHT - 1; i >= 0; --i) {
-            for (j = WIDTH - 1; j >= 0; --j) {
-                getColors(j, i, &r, &g, &b);
-                char i_s, j_s, r_s, g_s, b_s, w;
-                // red filter
-                if (r > 40) {
-                    i_s = i;
-                    w = 0;
-                    while (i_s >= 0) {
-                        getColors(j, i_s, &r_s, &g_s, &b_s);
-                        if (r_s > 40) {
-                            j_s = j;
-                            while (j_s >= 0) {
-                                getColors(j_s, i_s, &r_s, &g_s, &b_s);
-                                if (r_s > 40) {
-                                    buffer[2 * (WIDTH * i_s + j_s)] &= 0x07; // clean red
-                                } else {
-                                    break;
-                                }
-                                --j_s;
-                            }
-                            if (j - j_s > w) {
-                                w = j - j_s;
-                            }
-                        } else {
-                            break;
-                        }
-                        --i_s;
-                    }
-                    h = i - i_s;
-                    if (h > 3 && w > 3) {
-                        sprintf(msg, "red %d %d %d %d\r\n", j, i, w, h);
-                        sendString(msg);
-                        reds++;
-                    }
-                }
-            }
-        }
+        see(red_objects, &reds, green_objects, &greens);
         sprintf(msg, "total reds %d cycle %d\r\n", reds, cycle);
         sendString(msg);
+        char i = 0;
+        for (i = 0; i < reds; ++i) {
+            sprintf(msg, "red object %d %d \r\n", red_objects[i].dis, red_objects[i].dir);
+            sendString(msg);
+        }
+        sprintf(msg, "total greens %d cycle %d\r\n", greens, cycle);
+        sendString(msg);
+        for (i = 0; i < greens; ++i) {
+            sprintf(msg, "green object %d %d \r\n", green_objects[i].dis, green_objects[i].dir);
+            sendString(msg);
+        }
         LED0 = LED0 ^ 1;
         waitMillis(500);
         cycle++;
